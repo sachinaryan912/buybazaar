@@ -5,7 +5,7 @@ Welcome to BuyBazaar, your ultimate online shopping destination! Discover a worl
 
 # Welcome to BuyBazaar 🛍️
 
-![BuyBazaar Logo](https://example.com/buybazaar-logo.png)
+![BuyBazaar Logo](https://drive.google.com/file/d/1ptE5wWgbvQs2vDGNDVT7i38fF4bmwqZY/view?usp=drive_link)
 
 Discover a world of endless choices at your fingertips with BuyBazaar, your ultimate online shopping destination!
 
