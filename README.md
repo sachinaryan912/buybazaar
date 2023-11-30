@@ -1,9 +1,6 @@
-# Buybazaar
+# Welcome to BuyBazaar 🛍️
 
 Welcome to BuyBazaar, your ultimate online shopping destination! Discover a world of endless choices at your fingertips. Browse through a curated selection of high-quality products, from fashion to electronics. Enjoy a seamless and secure shopping experience with fast delivery and reliable customer service. Dive into the convenience of BuyBazaar and redefine your online shopping journey!
-
-
-# Welcome to BuyBazaar 🛍️
 
 ![BuyBazaar Logo](https://github.com/sachinaryan912/buybazaar/blob/main/assets/Screenshot%202023-11-30%20at%2011.48.54%E2%80%AFPM.png)
 
