@@ -6,7 +6,9 @@
 
 ## Overview
 
-Brief description of your application.
+Welcome to BuyBazaar, your ultimate online shopping destination! Discover a world of endless choices at your fingertips. Browse through a curated selection of high-quality products, from fashion to electronics. Enjoy a seamless and secure shopping experience with fast delivery and reliable customer service. Dive into the convenience of BuyBazaar and redefine your online shopping journey!
+
+
 
 ## Table of Contents
 
@@ -47,8 +49,6 @@ Brief description of your application.
 
 ## Features
 
-## Features
-
 - **User Authentication:** Secure user authentication system with roles and permissions.
 - **Product Management:** Manage your products with easy CRUD operations.
 - **Shopping Cart:** Users can add products to their cart for a seamless shopping experience.
@@ -81,8 +81,6 @@ Feel free to tailor this list according to the specific features and functionali
 
 Follow these steps to set up and run the BuyBazaar Spring Boot application locally:
 
-### Prerequisites
-
 Make sure you have the following prerequisites installed:
 
 - Java Development Kit (JDK) 11 or higher
@@ -97,7 +95,25 @@ cd buybazaar-spring
 
 ## Configuration
 
-Explain any necessary configuration or environment variables.
+## Configuration
+
+Before running the BuyBazaar Spring Boot application, you may need to configure certain settings. Follow these steps:
+
+### Database Configuration
+
+The application uses MySQL as the default database. Configure your database settings in the `application.properties` file located in the `src/main/resources` directory:
+
+```properties
+# Database Configuration
+spring.datasource.url=jdbc:mysql://localhost:3306/your_database
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# Hibernate Configuration
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+spring.jpa.hibernate.ddl-auto=update
+```
 
 ## License
 
