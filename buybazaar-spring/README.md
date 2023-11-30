@@ -17,8 +17,6 @@ Welcome to BuyBazaar, your ultimate online shopping destination! Discover a worl
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Configuration](#configuration)
-- [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Getting Started
@@ -95,11 +93,9 @@ cd buybazaar-spring
 
 ## Configuration
 
-## Configuration
-
 Before running the BuyBazaar Spring Boot application, you may need to configure certain settings. Follow these steps:
 
-### Database Configuration
+  #### Database Configuration
 
 The application uses MySQL as the default database. Configure your database settings in the `application.properties` file located in the `src/main/resources` directory:
 
