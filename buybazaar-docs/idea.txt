@@ -7,5 +7,5 @@ IDEAS
 3. Login / registration api
 	- simple email auth
 	- google signup
-	- lo
+	- logout
 	
