@@ -1,4 +1,4 @@
-# Welcome to BuyBazaar 🛍️
+# BuyBazaar - an ecommerce platform 🛍️
 
 ![BuyBazaar Logo](https://github.com/sachinaryan912/buybazaar/blob/main/assets/logo_v2.0.png)
 
