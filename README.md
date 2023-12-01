@@ -13,6 +13,24 @@ Welcome to BuyBazaar, your ultimate online shopping destination! Discover a worl
 Discover a world of endless choices at your fingertips with BuyBazaar, your ultimate online shopping destination!
 
 ![BuyBazaar Logo](https://github.com/sachinaryan912/buybazaar/blob/main/assets/logo_v2.0.png)
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Dive into Convenience](#dive-into-convenience)
+- [Explore Our Latest Products](#explore-our-latest-products)
+- [Secure Checkout](#secure-checkout)
+- [Track Your Order](#track-your-order)
+- [License](#license)
+- [Contact Us](#contact-us)
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sachinaryan912/buybazaar.git
+
 ## 🌟 Features
 
 - Curated Selection: Explore a carefully curated collection of high-quality products.
@@ -25,29 +43,23 @@ Discover a world of endless choices at your fingertips with BuyBazaar, your ulti
 
 Dive into the convenience of BuyBazaar and redefine your online shopping journey. With a user-friendly interface and a vast array of products, your perfect purchase is just a click away.
 
-## 😎 Explore Our Latest Products:
+## 😎 Explore Our Latest Products
 
 Browse our catalog to discover the latest products.
 
-## 🔐 Secure Checkout:
+## 🔐 Secure Checkout
 
 Enjoy a seamless checkout process with our secure payment gateway.
 
-## 📦 Track Your Order:
+## 📦 Track Your Order
 
 Stay updated on your order status with real-time tracking.
 
 
-## 🚀 Get Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/sachinaryan912/buybazaar.git
-
 ## License
 Not Available
 
-## 📞Contact Us
+## 📞 Contact Us
 Have questions or need assistance? Contact our customer service at support@buybazaar.com or call us at +00 00000-00000.
 
-Happy shopping with BuyBazaar! 🎉
+# 🥰 Happy shopping with BuyBazaar! 🎉
