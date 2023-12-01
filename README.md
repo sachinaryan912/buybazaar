@@ -38,6 +38,9 @@ Stay updated on your order status with real-time tracking.
    ```bash
    git clone https://github.com/sachinaryan912/buybazaar.git
 
+## License
+Not Available
+
 ## 📞Contact Us
 Have questions or need assistance? Contact our customer service at support@buybazaar.com or call us at +00 00000-00000.
 
