@@ -1,14 +1,5 @@
 # BuyBazaar - v1.0 🛍️
 
-![BuyBazaar Logo](https://github.com/sachinaryan912/buybazaar/blob/main/assets/logo_v2.0.png)
-
-Welcome to BuyBazaar, your ultimate online shopping destination! Discover a world of endless choices at your fingertips. Browse through a curated selection of high-quality products, from fashion to electronics. Enjoy a seamless and secure shopping experience with fast delivery and reliable customer service. Dive into the convenience of BuyBazaar and redefine your online shopping journey!
-
-Discover a world of endless choices at your fingertips with BuyBazaar, your ultimate online shopping destination!
-
-
-## Development Information
-
 ![Java Version](https://img.shields.io/badge/Java-11-green)
 ![Spring Boot Version](https://img.shields.io/badge/Spring%20Boot-2.5.4-brightgreen)
 ![Maven](https://img.shields.io/badge/Maven-3.8.1-blue)
@@ -17,6 +8,11 @@ Discover a world of endless choices at your fingertips with BuyBazaar, your ulti
 ![NPM](https://img.shields.io/badge/NPM-Latest-red)
 ![SQL](https://img.shields.io/badge/SQL-Latest-orange)
 
+Welcome to BuyBazaar, your ultimate online shopping destination! Discover a world of endless choices at your fingertips. Browse through a curated selection of high-quality products, from fashion to electronics. Enjoy a seamless and secure shopping experience with fast delivery and reliable customer service. Dive into the convenience of BuyBazaar and redefine your online shopping journey!
+
+Discover a world of endless choices at your fingertips with BuyBazaar, your ultimate online shopping destination!
+
+![BuyBazaar Logo](https://github.com/sachinaryan912/buybazaar/blob/main/assets/logo_v2.0.png)
 ## 🌟 Features
 
 - Curated Selection: Explore a carefully curated collection of high-quality products.
