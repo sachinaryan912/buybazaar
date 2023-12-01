@@ -16,14 +16,14 @@ Discover a world of endless choices at your fingertips with BuyBazaar, your ulti
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
-- [Features](#features)
-- [Dive into Convenience](#dive-into-convenience)
-- [Explore Our Latest Products](#explore-our-latest-products)
-- [Secure Checkout](#secure-checkout)
-- [Track Your Order](#track-your-order)
-- [License](#license)
-- [Contact Us](#contact-us)
+- [Getting Started](##🚀-getting-started)
+- [Features](##features)
+- [Dive into Convenience](##dive-into-convenience)
+- [Explore Our Latest Products](##explore-our-latest-products)
+- [Secure Checkout](##secure-checkout)
+- [Track Your Order](##track-your-order)
+- [License](##license)
+- [Contact Us](##contact-us)
 
 ## 🚀 Getting Started
 
