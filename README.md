@@ -7,6 +7,16 @@ Welcome to BuyBazaar, your ultimate online shopping destination! Discover a worl
 Discover a world of endless choices at your fingertips with BuyBazaar, your ultimate online shopping destination!
 
 
+## Development Information
+
+- ![Java Version](https://img.shields.io/badge/Java-11-green)
+- ![Spring Boot Version](https://img.shields.io/badge/Spring%20Boot-2.5.4-brightgreen)
+- ![Maven](https://img.shields.io/badge/Maven-3.8.1-blue)
+- ![React](https://img.shields.io/badge/React-Latest-blue)
+- ![Node.js](https://img.shields.io/badge/Node.js-Latest-brightgreen)
+- ![NPM](https://img.shields.io/badge/NPM-Latest-red)
+- ![SQL](https://img.shields.io/badge/SQL-Latest-orange)
+
 ## 🌟 Features
 
 - Curated Selection: Explore a carefully curated collection of high-quality products.
