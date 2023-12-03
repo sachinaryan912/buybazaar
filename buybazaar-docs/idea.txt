@@ -1,0 +1,12 @@
+IDEAS
+--------
+
+1. Landing page
+2. login/signup validation
+ 	- name / email / password / use cache memory for remember me
+3. Login / registration api
+	- simple email auth
+	- google signup
+	- logout
+4.we will add Chatbot for solve common queries of our customer.
+	
