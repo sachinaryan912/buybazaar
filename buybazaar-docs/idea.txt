@@ -8,5 +8,5 @@ IDEAS
 	- simple email auth
 	- google signup
 	- logout
-4.we will add Chatbot for solve doubt of our customer.
+4.we will add Chatbot for solve common queries of our customer.
 	
