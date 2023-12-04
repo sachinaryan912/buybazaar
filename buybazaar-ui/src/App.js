@@ -1,11 +1,15 @@
 
-import { Box } from '@mui/material';
+
 import './App.css';
 import Appbar from './component/navbar/Appbar';
 
 function App() {
+  const linkArray=["Products","Services","Overview","Contact Us"];
   return (
-   <Appbar/>
+<>
+<Appbar linkArray={linkArray}/>
+
+</>
   );
 }
 
