@@ -15,7 +15,7 @@ Discover a world of endless choices at your fingertips with BuyBazaar, your ulti
 ![BuyBazaar Logo](https://github.com/sachinaryan912/buybazaar/blob/main/assets/IMG_9354.jpeg)
 
 ### Brand images
-![BuyBazaar Logo](https://github.com/sachinaryan912/buybazaar/blob/main/assets/IMG_9354.jpeg)
+![BuyBazaar Logo](https://github.com/sachinaryan912/buybazaar/blob/main/assets/logo_v2.0.png)
 
 ## Table of Contents
 
