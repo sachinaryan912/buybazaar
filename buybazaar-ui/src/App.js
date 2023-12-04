@@ -1,9 +1,11 @@
 
+import { Box } from '@mui/material';
 import './App.css';
+import Appbar from './component/navbar/Appbar';
 
 function App() {
   return (
-    <h1>hello from react</h1>
+   <Appbar/>
   );
 }
 
