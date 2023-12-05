@@ -1,8 +1,8 @@
 import { MenuOpenRounded } from '@mui/icons-material'
-import { Menu, MenuItem,IconButton } from '@mui/material'
+import { Menu, MenuItem,IconButton, Avatar } from '@mui/material'
 import React, { useState } from 'react'
 
-function MenuComponent({linkArray}) {
+function MenuComponent({linkArray,avtaar}) {
     const [open,setOpen]=useState(false)
   return (
    <>
@@ -11,17 +11,15 @@ function MenuComponent({linkArray}) {
         vertical: 'top',
         horizontal: 'right',
       }}
-      
-     
-   
-   
+       
    >
     {linkArray.map((val)=>{
         return <MenuItem onClick={()=>setOpen(false)}>{val}</MenuItem>
     })}
    </Menu>
    <IconButton sx={{marginLeft:'auto',color:'white'}} onClick={()=>setOpen(true)}>
-    <MenuOpenRounded/>
+    {avtaar==undefined?<MenuOpenRounded/>:<Avatar alt="User" src="/static/images/avatar/2.jpg" />}
+    
    </IconButton>
    </>
   )
