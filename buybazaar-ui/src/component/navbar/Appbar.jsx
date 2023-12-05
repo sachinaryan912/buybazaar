@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -12,9 +12,16 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import SearchIcon from "@mui/icons-material/Search";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 
-const pages = ["Products", "Pricing", "Blog"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const categories = ["Men", "Women", "Kids", "Home & Decor", "Electronics & Appliances", "Others"];
+const settings = ["Login/Signup", "Cart", "Wishlist", "My orders", "Enquiry"];
 
 function Appbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -23,6 +30,7 @@ function Appbar() {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
@@ -36,85 +44,43 @@ function Appbar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: "black" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
+          <IconButton
+            size="large"
+            aria-label="menu"
+            onClick={handleOpenNavMenu}
+            color="inherit"
+            sx={{ display: { xs: "block", md: "none" } }}
           >
-            LOGO
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+            <MenuIcon />
+          </IconButton>
+          <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
+            {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              href="#app-bar-with-responsive-menu"
               sx={{
-                display: { xs: "block", md: "none" },
+                fontFamily: "Shizuru, sans-serif",
+                fontWeight: 700,
+                letterSpacing: ".1rem",
+                textTransform: "uppercase", // Make the text uppercase
+                color: "white",
+                textDecoration: "none",
+                display: { xs: "flex", md: "flex" },
+                justifyContent: "center",
+                alignItems: "center",
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+              <span style={{ fontSize: "1.5rem" }}>buybazaar</span>
+            </Typography>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+
+          <Box sx={{ flexGrow: 1.5, display: { xs: "none",alignItems:"center", md: "flex" } }}>
+            {categories.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
@@ -125,14 +91,23 @@ function Appbar() {
             ))}
           </Box>
 
+
+
+          
+
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="User" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
-              sx={{ mt: "45px" }}
+              sx={{ mt: "45px" ,
+              pl: 5,
+              "& .MuiPaper-root": {
+                borderRadius: "20px",
+              },
+            }}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{
@@ -147,16 +122,49 @@ function Appbar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+              {settings.map((setting,index) => (
+                <MenuItem key={setting} onClick={handleCloseUserMenu} sx={{ borderRadius: "30px" }}>
+                   <ListItemIcon>
+                    {index === 0 && <AccountCircleIcon />}
+                    {index === 1 && <ShoppingCartIcon />}
+                    {index === 2 && <FavoriteIcon />}
+                    {index === 3 && <AssignmentIcon />}
+                    {index === 4 && <QuestionAnswerIcon />}
+                  </ListItemIcon>
+                  <Typography textAlign="center" sx={{borderRadius: "50px"}}>{setting}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
         </Toolbar>
+        {/* Expanded categories list for responsive */}
+        <Menu
+          id="menu-appbar"
+          anchorEl={anchorElNav}
+          anchorOrigin={{
+            vertical: "bottom",
+            horizontal: "left",
+          }}
+          keepMounted
+          transformOrigin={{
+            vertical: "top",
+            horizontal: "left",
+          }}
+          open={Boolean(anchorElNav)}
+          onClose={handleCloseNavMenu}
+          sx={{
+            display: { xs: "block", md: "none" },
+          }}
+        >
+          {categories.map((page) => (
+            <MenuItem key={page} onClick={handleCloseNavMenu}>
+              <Typography textAlign="center">{page}</Typography>
+            </MenuItem>
+          ))}
+        </Menu>
       </Container>
     </AppBar>
   );
 }
+
 export default Appbar;

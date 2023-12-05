@@ -1,19 +1,14 @@
 import * as React from "react";
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-
-import TableRow from "@mui/material/TableRow";
-
-
- 
-
-
-
-function createData(about, help, policy,social) {
-  return { about, help, policy ,social};
+// Function to create data rows
+function createData(col1, col2, col3, col4) {
+  return { col1, col2, col3, col4 };
 }
+
 
 const rows = [
   createData("ABOUT", "HELP", "CONSUMER POLICY", "SOCIAL"),
@@ -27,25 +22,41 @@ const rows = [
 ];
 
 export default function CustomPaginationActionsTable() {
+  const [value, setValue] = React.useState(0);
   return (
-    <Table
-      sx={{
-        width: "75%",
-        height: "10%",
-        marginTop: 50,
-        borderBottom: "none",
-      }}
-    >
-      <TableBody sx={{  }}>
-        {rows.map((row) => (
-          <TableRow key={row.name}>
-            <TableCell sx={{ padding: "0.5rm" }}>{row.about}</TableCell>
-            <TableCell>{row.help}</TableCell>
-            <TableCell>{row.policy}</TableCell>
-            <TableCell>{row.social}</TableCell>
-          </TableRow>
+   
+
+    <Box 
+    sx={{ 
+      backgroundColor: 'black', 
+      color: 'white', 
+      pt: 5, 
+      pb: 3 ,
+      marginTop: 33,
+      borderBottom: "none"
+      }}>
+    <Container maxWidth="lg">
+      <Grid container spacing={3}>
+      <Grid item xs={12} sm={6} md={3}>
+            {/* Your logo */}
+            <img src="./static/images/IMG_9354.jpg" alt="Logo" 
+            style={{ width: '50%', marginBottom: '10px', borderRadius: '10px' }} />
+          </Grid>
+        {rows.map((row, index) => (
+          <Grid item xs={12} sm={6} md={3} key={index}>
+            <Typography variant="h6" >{row.col1}</Typography>
+            <Typography sx={{color: "grey"}}>{row.col2}</Typography>
+            <Typography sx={{color: "grey"}}> {row.col3}</Typography>
+            <Typography sx={{color: "grey"}}>{row.col4}</Typography>
+          </Grid>
         ))}
-      </TableBody>
-    </Table>
+      </Grid>
+      {/* Add additional content or links here */}
+      <Typography variant="body2" sx={{ mt: 3 , color: "grey"}}>
+        © 2023 BuyBazaar. All rights reserved.
+      </Typography>
+    </Container>
+
+  </Box>
   );
 }
