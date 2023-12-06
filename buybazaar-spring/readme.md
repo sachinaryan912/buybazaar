@@ -95,4 +95,4 @@ spring.jpa.hibernate.ddl-auto=update
 
 ## License
 
-Not available
+This project is licensed under the [MIT License](LICENSE).
