@@ -38,7 +38,7 @@ const ProductList = () => {
             component="img"
             alt={product.productName}
             height="140"
-            image={product.imageUrl} // Replace with the actual image URL property in your data
+            image={product.imageUrl}
           />
           <CardContent>
             <Typography variant="h6" component="div">
