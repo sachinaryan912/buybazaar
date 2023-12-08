@@ -2,85 +2,129 @@ package com.company.buybazaar.DTO;
 
 public class ProductDTO {
 	
-	private int productId;
-	private String productName;
-	private String description;
-	private double price;
-	private String category;
-	private String subcategory;
-	private int availableQuantity;
-	private float rating;
-	private int reviews;
-	private int sellerId;
-	public int getProductId() {
+	private Integer productId;
+    private String productName;
+    private String description;
+    private String imageUrl;
+    private Double price;
+    private String category;
+    private String subcategory;
+    private Integer availableQuantity;
+    private Double rating;
+    private Integer reviews;
+    private Integer sellerId;
+
+    // Constructors, getters, setters, etc.
+    
+    // Constructors
+    public ProductDTO() {
+    }
+
+    public ProductDTO(Integer productId, String productName, String description, String imageUrl, Double price,
+                      String category, String subcategory, Integer availableQuantity, Double rating, Integer reviews,
+                      Integer sellerId) {
+        this.productId = productId;
+        this.productName = productName;
+        this.description = description;
+        this.imageUrl = imageUrl;
+        this.price = price;
+        this.category = category;
+        this.subcategory = subcategory;
+        this.availableQuantity = availableQuantity;
+        this.rating = rating;
+        this.reviews = reviews;
+        this.sellerId = sellerId;
+    }
+
+	public Integer getProductId() {
 		return productId;
 	}
-	public void setProductId(int productId) {
+
+	public void setProductId(Integer productId) {
 		this.productId = productId;
 	}
+
 	public String getProductName() {
 		return productName;
 	}
+
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
+
 	public String getDescription() {
 		return description;
 	}
+
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public double getPrice() {
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
+
+	public Double getPrice() {
 		return price;
 	}
-	public void setPrice(double price) {
+
+	public void setPrice(Double price) {
 		this.price = price;
 	}
+
 	public String getCategory() {
 		return category;
 	}
+
 	public void setCategory(String category) {
 		this.category = category;
 	}
+
 	public String getSubcategory() {
 		return subcategory;
 	}
+
 	public void setSubcategory(String subcategory) {
 		this.subcategory = subcategory;
 	}
-	public int getAvailableQuantity() {
+
+	public Integer getAvailableQuantity() {
 		return availableQuantity;
 	}
-	public void setAvailableQuantity(int availableQuantity) {
+
+	public void setAvailableQuantity(Integer availableQuantity) {
 		this.availableQuantity = availableQuantity;
 	}
-	public float getRating() {
+
+	public Double getRating() {
 		return rating;
 	}
-	public void setRating(float rating) {
+
+	public void setRating(Double rating) {
 		this.rating = rating;
 	}
-	public int getReviews() {
+
+	public Integer getReviews() {
 		return reviews;
 	}
-	public void setReviews(int reviews) {
+
+	public void setReviews(Integer reviews) {
 		this.reviews = reviews;
 	}
-	public int getSellerId() {
+
+	public Integer getSellerId() {
 		return sellerId;
 	}
-	public void setSellerId(int sellerId) {
+
+	public void setSellerId(Integer sellerId) {
 		this.sellerId = sellerId;
 	}
 	
 	
-	@Override
-	public String toString() {
-		return "ProductDTO [productId=" + productId + ", productName=" + productName + ", description=" + description
-				+ ", price=" + price + ", category=" + category + ", subcategory=" + subcategory
-				+ ", availableQuantity=" + availableQuantity + ", rating=" + rating + ", reviews=" + reviews
-				+ ", sellerId=" + sellerId + "]";
-	}
 	
 	
 	

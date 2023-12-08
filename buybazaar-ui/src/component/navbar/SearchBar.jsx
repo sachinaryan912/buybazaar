@@ -13,9 +13,11 @@ const SearchField = ({ onSearch }) => {
     
       <TextField
       sx={{
-        background:'white',
+        background:'#333333',
         borderRadius:4,
+        color: 'white',
         marginTop:1,
+        outline: 'none',
         '& .MuiOutlinedInput-root': {
             '& fieldset': {
               borderColor: '#CACACA'

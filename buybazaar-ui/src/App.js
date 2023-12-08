@@ -7,6 +7,7 @@ import Appbar2 from './component/navbar/Appbar2';
 import SimpleBottomNavigation from './footer/BottomNavigation';
 
 import CustomPaginationActionsTable from './footer/Footer';
+import ProductList from './pages/Products';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       {/* <Appbar /> */}
       <Appbar2 linkArray={linkArray}/>
       <Carousel />
+      <ProductList />
       <CustomPaginationActionsTable />
       <SimpleBottomNavigation/>
    
