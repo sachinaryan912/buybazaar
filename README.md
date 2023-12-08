@@ -60,7 +60,7 @@ Stay updated on your order status with real-time tracking.
 
 
 ## License
-Not Available
+This project is licensed under the [MIT License](LICENSE).
 
 ## 📞 Contact Us
 Have questions or need assistance? Contact our customer service at support@buybazaar.com or call us at +00 00000-00000.
