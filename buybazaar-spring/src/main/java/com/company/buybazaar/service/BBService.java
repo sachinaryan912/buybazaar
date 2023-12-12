@@ -41,6 +41,7 @@ public class BBService {
         product.setRating(productDTO.getRating());
         product.setReviews(productDTO.getReviews());
         product.setSellerId(productDTO.getSellerId());
+        product.setTimestamp(String.valueOf(System.currentTimeMillis()));
 
         // Save the product to the database
         prodRepo.save(product);
@@ -62,6 +63,7 @@ public class BBService {
 		prod.setRating(product.getRating());
 		prod.setReviews(product.getReviews());
 		prod.setSellerId(product.getSellerId());
+		prod.setTimestamp(product.getTimestamp());
 
 		
 		
@@ -81,6 +83,7 @@ public class BBService {
 	    prod.setRating(product.getRating());
 	    prod.setReviews(product.getReviews());
 	    prod.setSellerId(product.getSellerId());
+	    prod.setTimestamp(product.getTimestamp());
 	    return prod;
 	}
 

@@ -13,10 +13,38 @@ public class ProductDTO {
     private Double rating;
     private Integer reviews;
     private Integer sellerId;
-
-    // Constructors, getters, setters, etc.
+    private String timestamp;
     
-    // Constructors
+
+    public ProductDTO(Integer productId, String productName, String description, String imageUrl, Double price,
+			String category, String subcategory, Integer availableQuantity, Double rating, Integer reviews,
+			Integer sellerId, String timestamp) {
+		super();
+		this.productId = productId;
+		this.productName = productName;
+		this.description = description;
+		this.imageUrl = imageUrl;
+		this.price = price;
+		this.category = category;
+		this.subcategory = subcategory;
+		this.availableQuantity = availableQuantity;
+		this.rating = rating;
+		this.reviews = reviews;
+		this.sellerId = sellerId;
+		this.timestamp = timestamp;
+	}
+
+	// Constructors, getters, setters, etc.
+    
+    public String getTimestamp() {
+		return timestamp;
+	}
+
+	public void setTimestamp(String timestamp) {
+		this.timestamp = timestamp;
+	}
+
+	// Constructors
     public ProductDTO() {
     }
 

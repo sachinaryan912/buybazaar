@@ -1,5 +1,7 @@
 package com.company.buybazaar.Entity;
 
+import org.hibernate.annotations.Columns;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -40,9 +42,21 @@ public class Product {
     @Column(name = "reviews")
     private Integer reviews;
 
-    @Column(name = "seller_id")
-    private Integer sellerId;
+    public String getTimestamp() {
+		return timestamp;
+	}
 
+	public void setTimestamp(String timestamp) {
+		this.timestamp = timestamp;
+	}
+
+	@Column(name = "seller_id")
+    private Integer sellerId;
+    
+    @Column(name="timestamp")
+    private String timestamp;
+
+    
 	public Integer getProductId() {
 		return productId;
 	}
